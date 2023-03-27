@@ -95,7 +95,7 @@ i{
     position: relative;
     top: -23px;
     left: 10px;
-}
+}/* this doesnt display as it should */
 .bottom{
     display: flex;
     flex-direction: row;
