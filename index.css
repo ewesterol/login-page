@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    background: linear-gradient(rgb(31, 78, 62) 50%,rgb(153, 186, 175)) ;
+}
 .box{
     border: 3px solid red;
     border-radius: 10px;
@@ -21,6 +24,7 @@
     justify-content: center;
     width: 50%;
     height: 100%;
+    background-color: rgb(216, 237, 230);
 }
 .container-right{
     width: 50%;
@@ -62,6 +66,7 @@ header{
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 15px;
+    background-color: white;
 }
 .input-label{
     color: rgb(31, 78, 62);
