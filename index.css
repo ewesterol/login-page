@@ -1,141 +1,136 @@
 *{
-    font-family: 'Hanken Grotesk', sans-serif;
-font-family: 'Happy Monkey', cursive;
-font-family: 'Orbitron', sans-serif;
-font-family: 'Poppins', sans-serif;
-padding: 0;
-margin: 0;
-
-}
-
-body{
+    margin:0;
+    padding: 0;
     box-sizing: border-box;
-
-background-color: rgb(31, 136, 31);
+    font-family: sans-serif;
 }
 .box{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border: 2px solid whitesmoke;
+    border: 3px solid red;
     border-radius: 10px;
     overflow: hidden;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
     margin: auto;
     margin-top: 50px;
-    max-width: 800px;
-    min-height: 90vh;
-    background-color: rgba(22, 47, 47, 0.506);
-    
-    
 }
 .container-left{
     display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+.container-right{
+    width: 50%;
+    height: 100%;
+    background-image: url("images/green.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.container-left-center{
+    width: 70%;
+    height: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 0 30px;
-    
-    width: 50%;
-   
-    background-color: rgba(211, 244, 244, 0.829);
-   
 }
 .top-header{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-bottom: 45px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
 }
 header{
-    font-size:20px;
-    font-weight: bold;
+    color: black;
+    font-size: larger;
+    font-weight: 500;
 }
-span{
+.header-desc{
+    font-size: 9px;
     margin-top: 5px;
-    font-size: 9px;
-}
-h3{
-    margin-bottom: 3px;
-    font-size: 9px;
+    color: rgb(31, 78, 62);
 }
 .input-field{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    border: 2px solid rgb(59, 117, 98);
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.input-label{
+    color: rgb(31, 78, 62);
+    margin-bottom: 3px;
+    font-size: 9px;
+    
 }
 .input{
-    
-    width:250px;
-    height: 30px;
-    border: none;
     outline: none;
-    border-radius: 10px;
-    padding: 0 0 0 40px;
-}
-/* the width of my sign-in-btn is bigger than input btn but they appear alike */
-.submit{
-    color: whitesmoke;
-    width: 325px;
-    height: 30px;
+    height: 5vh;
+    width: 100%;
     border: none;
-    outline: none;
-    border-radius: 10px;
-    padding: 0 40px;
-    margin-top: 15px ;
-    margin-bottom: 45px;
-    background-color: rgb(51, 101, 51);
-}
-.submit:hover{
-    background-color: red;
-    color: black;
-    font-weight: 700;
-    transition: .3s;
-    
+    margin-left: 3px;
 }
 i{
-    position: relative;
-    top: -23px;
-    left: 10px;
-}/* this doesnt display as it should */
+    margin: 0 5px;
+    color: rgb(59, 117, 98);
+}
 .bottom{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    font-size: small;
-    margin-bottom: 10px;
-   
-   
+    align-items: center;
+    font-size: 9px;
+    margin-bottom: 15px;
 }
 .left{
     display: flex;
     align-items: center;
-   
+    color: rgb(31, 78, 62);
 }
 #check{
-    margin-right: 4px;
+    margin-right: 5px;
 }
 .right a{
-    color:rgb(51, 101, 51);
     text-decoration: none;
+    color: rgb(83, 187, 152);
 }
 .right a:hover{
     color: red;
+    transition: .2s;
 }
-
-p{
+.submit{
+    color: whitesmoke;
+    background-color: rgb(14, 98, 70);
+    border: none;
+    border-radius: 10px;
+    height: 5vh;
+    margin-bottom: 20px;
+}
+.submit:hover{
+    background-color: red;
+    color: aliceblue;
+    transition: .2s;
+}
+.footer-desc{
     text-align: center;
     font-size: 9px;
+    color: rgb(31, 78, 62);
 }
-.footer a{
-    color:rgb(51, 101, 51);
+.footer-desc a{
+    color: rgb(83, 187, 152);
     text-decoration: none;
 }
-.footer a:hover{
+.footer-desc a:hover{
     color: red;
+    transition: .2s;
+    
 }
-.container-right{
-    background-image: url("images/green.jpg");
-    background-size: cover;
-   
-    width: 50%;
-    background-position: center;
+@media screen and (max-width: 480px) {
+    .container-right{
+        display: none;
+    }
 }
