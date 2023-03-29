@@ -89,7 +89,7 @@ i{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 9px;
+    font-size: 7px;
     margin-bottom: 15px;
 }
 .left{
@@ -139,4 +139,11 @@ i{
     .container-right{
         display: none;
     }
+    
+    .container-left{
+        width: 100%;
+    }
+   .bottom{
+    font-size: 10px;
+   }
 }
