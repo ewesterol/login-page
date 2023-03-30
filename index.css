@@ -1,149 +1,161 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 body{
-    background: linear-gradient(rgb(31, 78, 62) 50%,rgb(153, 186, 175)) ;
-}
-.box{
-    border: 3px solid red;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 70vw;
-    margin: auto;
-    margin-top: 50px;
+    
+    height: 100vh;
+    width: 100%;
+    background-color: #b9c6b9;
 }
-.container-left{
+.container{
     display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    background-color: #b9c6b9;
+    border-radius: 20px;
+    height: 80%;
+    max-width: 80%;
+    width: 100%;
+   overflow: hidden;
+   margin-top: 40px auto;
+    
+}
+.section-container{
+    display: flex;
+    width: 100%;
+    height: 95%;
+    border-top: 2px solid white;
+    
+}
+.elipsis i {
+    color: white;
+    font-size: 2em;
+    margin-left: 5px;
+}
+
+section.main{
+    display: flex;
+    align-items: center;
     justify-content: center;
     width: 50%;
+    background-color: #f8fbf9;
     height: 100%;
-    background-color: rgb(216, 237, 230);
+    padding: 40px;
+    
 }
-.container-right{
+.side{
+    background-image: url("images/green.jpg");
     width: 50%;
     height: 100%;
-    background-image: url("images/green.jpg");
-    background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+
 }
-.container-left-center{
-    width: 70%;
-    height: 100%;
+.login-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    padding: 24px;
+    
 }
 .top-header{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 5vh;
+   margin-bottom: 10px;
+    color: #11383e;
+    padding: 10px;
 }
-header{
-    color: black;
-    font-size: larger;
-    font-weight: 500;
-    
+.title{
+    font-size: 1.5em;
+    font-weight: 400;
 }
-.header-desc{
-    font-size: 9px;
-    margin-top: 5px;
-    color: rgb(31, 78, 62);
+.welcome-message{
+    font-size: 0.7em;
+    line-height: 20px;
+}
+label{
+    margin-bottom: 1px;
+    font-size: 0.6em;
+    color: #456444;
 }
 .input-field{
     display: flex;
     flex-direction: row;
-    border: 2px solid rgb(59, 117, 98);
     align-items: center;
+    width: 100%;
+    border: 2px solid #d3e2d2;
+    height: 6vh;
     border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 15px;
     background-color: white;
-}
-.input-label{
-    color: rgb(31, 78, 62);
-    margin-bottom: 3px;
-    font-size: 9px;
-    
+    margin-bottom: 10px;
 }
 .input{
     outline: none;
-    height: 5vh;
-    width: 100%;
     border: none;
-    margin-left: 3px;
+    width: 100%;
+    font-size: 15px;
+    color: #4b8349;
 }
-i{
+.input-field i{
     margin: 0 5px;
-    color: rgb(59, 117, 98);
+    color: #456444;
 }
-.bottom{
+.reminder{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 7px;
+    font-size: 13px;
     margin-bottom: 15px;
 }
 .left{
     display: flex;
     align-items: center;
-    color: rgb(31, 78, 62);
 }
-#check{
-    margin-right: 5px;
+.check{
+    margin: 0 3px;
+    background-color: #4b8349;
 }
 .right a{
-    text-decoration: none;
-    color: rgb(83, 187, 152);
+   text-decoration: none;
+    color: #4b8349;
+    font-size: 0.7em;
 }
-.right a:hover{
-    color: red;
-    transition: .2s;
-}
-.submit{
-    color: whitesmoke;
-    background-color: rgb(14, 98, 70);
+#submit{
     border: none;
-    border-radius: 10px;
-    height: 5vh;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 6vh;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #4ec54a , #071007);
+    margin-bottom: 25px;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    text-shadow: 0 1px 1px whitesmoke;
+    cursor: pointer;
 }
-.submit:hover{
-    background-color: red;
-    color: aliceblue;
-    transition: .2s;
-}
-.footer-desc{
+.footer{
     text-align: center;
-    font-size: 9px;
-    color: rgb(31, 78, 62);
+    font-size: 0.5em;
+    color: #456444;
 }
-.footer-desc a{
-    color: rgb(83, 187, 152);
+.footer a{
+    color: #4b8349;
     text-decoration: none;
 }
-.footer-desc a:hover{
-    color: red;
-    transition: .2s;
-    
-}
-@media screen and (max-width: 480px) {
-    .container-right{
+@media screen and (max-width: 480px){
+    .side{
         display: none;
     }
-    
-    .container-left{
+    section.main{
         width: 100%;
     }
-   .bottom{
-    font-size: 10px;
-   }
 }
